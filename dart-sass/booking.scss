@@ -1,0 +1,77 @@
+.booking_header {
+    @extend %menuHeader;
+    color: #fff;
+    text-align: center;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.input {
+    height: 25px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    font-family: $font;
+    font-weight: $medium;
+}
+
+.input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.booking-select-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    select {
+        width: 40%;
+        height: 39px;
+        option {
+            color: black;
+            font-size: 20px;
+            font-family: $font;
+            font-weight: $medium;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .bookingTime {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    .bookingSize {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.button_submit {
+    @extend %button;
+    transition: all 0.1s;
+    &:hover {
+        background-color: black;
+        border: solid 3px #fff;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+#booking_date:hover {
+    cursor: text;
+}
+
+#booking_date::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#booking_date::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}

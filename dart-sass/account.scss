@@ -1,0 +1,158 @@
+.account_container {
+    max-width: 1300px;
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+}
+
+.account_header {
+    display: flex;
+    h1 {
+        color: $yellow;
+        font-family: $font;
+        font-size: 45px;
+        font-weight: $black;
+        margin-right: 20px;
+    }
+    img {
+        width: 120px;
+        height: fit-content;
+        align-self: center;
+    }
+}
+
+.account_navBar {
+    background-color: #fff;
+    border-radius: 3px;
+    height: 35px;
+    ul {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        width: 55%;
+        li {
+            display: inline;
+            align-self: center;
+            .selected {
+                color: $yellow;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: $font;
+                font-weight: $semiBold;
+                font-size: 18px;
+                &:hover {
+                    color: $yellow;
+                }
+            }
+            i {
+                font-size: 29px;
+            }
+        }
+    }
+}
+
+.account_subTitle {
+    color: #fff;
+    margin-top: 50px;
+    h3 {
+        font-family: $font;
+        font-weight: $semiBold;
+        font-size: 23px;
+        margin: auto;
+    }
+    p {
+        margin: auto;
+        padding-top: 10px;
+        font-family: $font;
+        font-weight: $light;
+        font-size: 17px;
+    }
+    hr {
+        border: none;
+        border-bottom: solid 1px $yellow;
+        width: 70%;
+        margin: 20px auto 0px auto;
+    }
+}
+
+.account_subtitle2 {
+    h5 {
+        font-family: $font;
+        font-weight: $semiBold;
+        font-size: 17px;
+        margin: auto;
+    }
+    .span_email {
+        font-family: $font;
+        font-weight: $light;
+        font-style: italic;
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .alert_error {
+        font-family: $font;
+        font-weight: $bold;
+        color: $red;
+        font-size: 14px;
+    }
+}
+
+.account_form {
+    margin-top: 50px;
+    h5 {
+        font-family: $font;
+        font-weight: $semiBold;
+        font-size: 17px;
+        margin: auto;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    hr {
+        border: none;
+        border-bottom: solid 1px $yellow;
+        width: 70%;
+        margin: 50px auto 0px auto;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        div {
+            width: 40%;
+            input {
+                width: 55%;
+            }
+            label {
+                width: 58%;
+                margin-bottom: 40px;
+            }
+            p {
+                color: #fff;
+                font-family: $font;
+                font-weight: $light;
+                font-style: italic;
+                font-size: 11px;
+                width: 58%;
+                margin: auto;
+            }
+            button {
+                @extend %button;
+                width: 58%;
+                margin: auto;
+                display: block;
+                background-color: black;
+                border: solid 3px $yellow;
+                color: $yellow;
+                transition: all 0.1s;
+                &:hover {
+                    color: black;
+                    border-color: black;
+                    background-color: $yellow;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

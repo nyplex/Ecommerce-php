@@ -1,0 +1,87 @@
+.itemContainer {
+    height: 80vh;
+    max-height: 90vh;
+    margin: auto;
+    max-width: 1500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 40%;
+        max-width: 400px;
+        height: fit-content;
+        align-self: center;
+    }
+}
+
+.itemMainContent {
+    align-self: center;
+    i {
+        color: $red;
+        font-size: 40px;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.itemContent {
+    display: flex;
+    justify-content: center;
+}
+
+.itemTitle {
+    max-width: 50%;
+    margin-right: 50px;
+    h1 {
+        color: #fff;
+        font-size: 60px;
+        font-family: 'montserrat';
+        font-weight: 200;
+        overflow-wrap: break-word;
+    }
+}
+
+.itemPrice {
+    max-width: 45%;
+    align-self: center;
+    h1 {
+        color: $red;
+        font-family: 'montserrat';
+        font-weight: 700;
+        font-size: 55px;
+        border: solid 3px #fff;
+        padding: 10px;
+    }
+}
+
+.itemDescription {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    p {
+        color: #fff;
+        font-family: 'montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        width: 70%;
+        font-style: italic;
+    }
+}
+
+.orderButton {
+    @extend %button;
+    max-width: 100%;
+    border: solid 3px #fff;
+    background-color: $green;
+    color: #fff;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+        border: solid 3px $green;
+        background-color: #fff;
+        color: $green;
+    }
+}

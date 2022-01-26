@@ -1,0 +1,35 @@
+.newsLetterContainer {
+    p {
+        color: #fff;
+        font-family: 'montserrat';
+        font-weight: 700;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    label {
+        color: #fff;
+        font-family: 'montserrat';
+        font-size: 17px;
+    }
+}
+
+.inputNewsLetter {
+    width: 40%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.button_suscribe {
+    margin-bottom: 10px;
+    width: 40%;
+    height: 41px;
+    transition: all 0.1s;
+    border: solid 2px #fff;
+}
+
+.form_newsletter {
+    text-align: center;
+}

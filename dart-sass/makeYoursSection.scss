@@ -1,0 +1,28 @@
+.make_yours_header {
+    @extend %menuHeader;
+    color: #fff;
+    text-align: center;
+}
+
+.makeYoursContentContainer {
+    p {
+        color: white;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        font-family: 'montserrat';
+        font-weight: 100;
+        font-size: 26px;
+        font-style: italic;
+        line-height: 40px;
+    }
+    button {
+        @extend %button;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-top: 100px;
+        width: 45%;
+        transition: all 0.1s;
+    }
+}

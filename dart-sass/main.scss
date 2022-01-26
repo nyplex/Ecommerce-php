@@ -1,0 +1,173 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.pin {
+    @extend %pin;
+}
+
+.canvasContainer {
+    @extend %canvasContainer;
+}
+
+.canvas {
+    @extend %canvas;
+}
+
+.contentContainer {
+    @extend %contentContainer;
+}
+
+.hr-section {
+    @extend %hr;
+    margin-top: 50px;
+}
+
+//Adobe Fonts and style
+@import url("https://use.typekit.net/fee3njb.css");
+$font: "montserrat";
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$black: 900;
+$extraLlight: 200;
+$light: 300;
+//Colours
+$green: #85B505;
+$grey: #707070;
+$red: #DB1727;
+$yellow: #EBA300;
+$blue: #1786DB;
+//Extend/Inheritance
+%loginButton {
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    font-family: $font;
+    font-size: 17px;
+    font-weight: $bold;
+    border: solid 3px black;
+    background-color: #fff;
+    color: black;
+    i {
+        margin-left: 5px;
+    }
+    transition: all 0.1s;
+}
+
+%loginButtonHover {
+    cursor: pointer;
+    border-color: black;
+    background-color: #fff;
+    color: black;
+}
+
+%hr {
+    width: 70%;
+    border: none;
+    border-bottom: solid 3px $grey;
+}
+
+%menuHeader {
+    font-family: $font;
+    font-weight: $black;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+%menuSubHeader {
+    color: #fff;
+    font-family: $font;
+    font-weight: $black;
+    font-size: 35px;
+    padding-right: 25px;
+    text-align: right;
+    margin: 0;
+    margin-top: 30px
+}
+
+%pin {
+    padding-top: 100px;
+    overflow-x: hidden;
+    top: 0;
+    max-width: 2000px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+%canvasContainer {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    overflow-x: hidden;
+    top: 0;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+%canvas {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+%contentContainer {
+    height: 100%;
+    max-width: 1200px;
+    width: 80%;
+}
+
+%button {
+    width: 70%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    color: black;
+    font-family: $font;
+    font-weight: $black;
+    font-size: 25px;
+}
+
+//sass files import
+@import 'header/navbar_desktop';
+@import 'header/navbar_mobile';
+@import 'header/header';
+@import 'footer';
+@import 'menu/menu';
+@import 'booking';
+@import 'makeYoursSection';
+@import 'newsLetter';
+@import 'about';
+@import 'item';
+@import 'modal/login';
+@import 'account';
+@import 'order/order';
+//media queries  
+@media screen and (max-width: 1250px) {
+    .contentContainer {
+        width: 96%;
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: 100%;
+    }
+    .canvasContainer {
+        display: none;
+    }
+}

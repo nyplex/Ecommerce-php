@@ -1,0 +1,22 @@
+.footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'montserrat';
+    font-weight: 200;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 50px;
+    div {
+        width: 45%;
+        max-width: 45%;
+    }
+}
+
+.hr-footer {
+    width: 100%;
+    border-color: #fff;
+    margin-top: 150px;
+}

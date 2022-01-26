@@ -1,0 +1,100 @@
+//glide menu styling 
+.glide__arrows {
+    button {
+        background-color: black;
+        color: #fff;
+        font-family: $font;
+        font-weight: $semiBold;
+        border: solid 3px #fff;
+        transition: all 0.1s;
+    }
+    button:hover {
+        background-color: #fff;
+        color: black;
+    }
+}
+
+.glide__slide {
+    border: solid 1px $grey;
+    text-align: center;
+    padding: 10px;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    transition: all 0.2s;
+}
+
+.glide__slide:hover {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-color: $grey;
+}
+
+.glide__slide_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.glide_slide_text {
+    width: 100%;
+    overflow-wrap: break-word;
+    h4 {
+        margin: 0;
+        font-family: $font;
+        font-weight: $light;
+        font-size: 17px;
+    }
+    h6 {
+        margin: 0;
+        font-family: $font;
+        font-weight: $semiBold;
+        font-size: 15px;
+    }
+}
+
+.glide__track {
+    border-left: solid 1px $grey;
+    border-right: solid 1px $grey;
+}
+
+.glide__slides {
+    margin: 1px;
+}
+
+//menu section style
+.menu-sub-header {
+    h6 {
+        @extend %menuSubHeader;
+        margin-bottom: 20px
+    }
+}
+
+.cocktails_header {
+    @extend %menuHeader;
+    color: $green;
+}
+
+.soft_header {
+    @extend %menuHeader;
+    color: $yellow;
+}
+
+.beers_header {
+    @extend %menuHeader;
+    color: $red;
+}
+
+@media screen and (max-width: 1250px) {
+    .menu-sub-header {
+        h6 {
+            text-align: left;
+        }
+    }
+}

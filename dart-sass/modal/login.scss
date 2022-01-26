@@ -1,0 +1,154 @@
+// The modal login style
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    backdrop-filter: blur(8px);
+}
+
+#myModal {
+    display: none;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid #fff;
+    width: 50%;
+    margin-top: 50px;
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-family: 'montserrat';
+        font-weight: 100;
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    p {
+        color: #fff;
+        text-align: center;
+        font-family: 'montserrat';
+        font-weight: 600;
+        width: 70%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 25px;
+    }
+}
+
+.formLogginInput {
+    text-align: center;
+    input {
+        margin: 0 0;
+        width: 40%;
+    }
+}
+
+.buttonLoggin {
+    @extend %button;
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 25px;
+    transition: all 0.1s;
+    background-color: black;
+    border: solid 3px $yellow;
+    color: $yellow;
+    &:hover {
+        cursor: pointer;
+        color: black;
+        border-color: black;
+        background-color: $yellow;
+    }
+}
+
+.signupButton {
+    @extend %button;
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 25px;
+    transition: all 0.1s;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: $red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inputSignup {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 40%;
+}
+
+.signupButton {
+    margin-top: 0;
+}
+
+.signup_label {
+    color: #ff404f;
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.login_label {
+    color: #ff404f;
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.label_booking {
+    margin-left: 0;
+    text-align: left;
+    width: 58%;
+}

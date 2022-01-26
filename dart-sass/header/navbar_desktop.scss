@@ -1,0 +1,122 @@
+.main-navbar {
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    z-index: 10000;
+    padding-top: 15px;
+    top: 0;
+}
+
+.navbar-desktop {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.navbar-logo {
+    img {
+        width: 250px;
+    }
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.navbar-menu {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        li {
+            border: solid 3px transparent;
+            transition: border-color 0.1s;
+            align-self: center;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-family: $font;
+                font-weight: $regular;
+                font-size: 20px;
+                margin: 3px;
+                padding: 5px;
+            }
+        }
+        li:hover {
+            border-color: #fff !important;
+        }
+    }
+    width: 100%;
+}
+
+.navbar-login {
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 25px;
+    button {
+        @extend %loginButton;
+        color: black;
+        a {
+            color: black;
+        }
+    }
+    button:hover {
+        a {
+            color: #fff;
+        }
+        cursor: pointer;
+        border-color: #fff;
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.navbar-hr {
+    position: sticky;
+    top: 60px;
+    hr {
+        max-width: 650px;
+        border: none;
+        border-top: solid 1px $grey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: -1px;
+    }
+}
+
+.navbar-bottom-border {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+}
+
+#logoutButton {
+    border: solid 3px $red;
+    color: $red;
+    width: 50px;
+    text-align: center;
+    background-color: black;
+    &:hover {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-hr {
+        display: none;
+    }
+}
